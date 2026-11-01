@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak dan Kontribusi | Noodle</title>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Logo Noodle" width="150">
+    <p>Noodle - Ensiklopedia Esports Mobile Indonesia</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="game.html">Wiki Game</a></li>
+        <li><a href="turnamen.html">Turnamen</a></li>
+        <li><a href="daftar.html">Kontak &amp; Kontribusi</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Kontak &amp; Kontribusi Data</h1>
+    <p>Punya data tim, pemain, atau turnamen? Isi formulir berikut agar tim Noodle dapat memverifikasinya.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Data Kontributor</legend>
+
+        <p>
+          <label for="nama">Nama Lengkap:</label><br>
+          <input type="text" id="nama" name="nama" required minlength="3" placeholder="Contoh: Budi Santoso">
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required placeholder="nama@email.com">
+        </p>
+
+        <p>
+          <label for="usia">Usia:</label><br>
+          <input type="number" id="usia" name="usia" min="10" max="80" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Data yang Dikontribusikan</legend>
+
+        <p>
+          <label for="game">Pilih Game:</label><br>
+          <select id="game" name="game" required>
+            <option value="">-- Pilih --</option>
+            <option value="freefire">Free Fire</option>
+            <option value="mobilelegends">Mobile Legends</option>
+            <option value="pubgmobile">PUBG Mobile</option>
+          </select>
+        </p>
+
+        <p>Jenis Data:</p>
+        <p>
+          <input type="radio" id="jenis-tim" name="jenis" value="tim" required>
+          <label for="jenis-tim">Tim</label>
+          <input type="radio" id="jenis-pemain" name="jenis" value="pemain">
+          <label for="jenis-pemain">Pemain</label>
+          <input type="radio" id="jenis-turnamen" name="jenis" value="turnamen">
+          <label for="jenis-turnamen">Turnamen</label>
+        </p>
+
+        <p>Peran Anda:</p>
+        <p>
+          <input type="checkbox" id="peran-fans" name="peran" value="fans">
+          <label for="peran-fans">Penggemar</label>
+          <input type="checkbox" id="peran-pemain" name="peran" value="pemain">
+          <label for="peran-pemain">Pemain</label>
+          <input type="checkbox" id="peran-kreator" name="peran" value="kreator">
+          <label for="peran-kreator">Konten Kreator</label>
+        </p>
+
+        <p>
+          <label for="tautan">Tautan Sumber (opsional):</label><br>
+          <input type="url" id="tautan" name="tautan" placeholder="https://...">
+        </p>
+
+        <p>
+          <label for="pesan">Keterangan:</label><br>
+          <textarea id="pesan" name="pesan" rows="5" cols="40" required minlength="10"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="checkbox" id="setuju" name="setuju" required>
+        <label for="setuju">Saya menyatakan data ini benar.</label>
+      </p>
+
+      <button type="submit">Kirim</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+  <footer>
+    <hr>
+    <p>&copy; 2026 Noodle.</p>
+    <p><a href="daftar.html">Hubungi kami</a> | <a href="index.html">Kembali ke Beranda</a></p>
+  </footer>
+</body>
+</html>
